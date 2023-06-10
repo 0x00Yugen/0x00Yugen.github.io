@@ -1,4 +1,41 @@
+/* ========================================
+   RESETS
+   ======================================== */
+
+/* Reset some default browser styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* ========================================
+   LAYOUT & TYPOGRAPHY
+   ======================================== */
+
 body {
+    line-height: 1.6;  /* Increase line-height for better readability */
     background: url('498921.jpg') no-repeat center center fixed; 
     background-size: cover;
     color: #FFF;
@@ -13,7 +50,7 @@ body {
 
 .container {
     width: 60%;
-    background: rgba(255, 255, 255, 0.1);  /* Light white color, lower opacity for transparency */
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     padding: 20px;
     border-radius: 10px;
@@ -24,69 +61,118 @@ body {
 
 header {
     text-align: center;
+    margin-bottom: 20px;  /* Add space below the header */
 }
 
 h1, h2 {
-    color: #FFFFFF;  /* Light natural tone */
+    color: #FFFFFF;
+    margin-bottom: 20px;  /* Add space below headlines */
+}
+
+h1 {
+    font-size: 2em;  /* Make h1 larger */
+}
+
+h2 {
+    font-size: 1.5em;  /* Make h2 smaller than h1 but larger than normal text */
 }
 
 main {
     margin-top: 20px;
 }
 
+/* ========================================
+   BUTTONS
+   ======================================== */
+
 .button {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.2);  /* White color with more transparency for a glass effect */
-    color: #FFF;  /* White text */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFF;
     text-decoration: none;
     padding: 10px 20px;
-    margin: 15px 20px;  /* Increase margin for more space */
+    margin: 15px 20px;
     border-radius: 4px;
-    transition: background-color 0.5s ease, transform 0.5s ease;  /* Longer transition for more prominent hover effect */
+    transition: background-color 0.5s ease, transform 0.5s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
 }
 
+.buttonApologies for the truncation. Let's continue:
+
+```css
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.3);  /* Lighter white on hover */
-    transform: scale(1.1);  /* Increase size on hover for more prominent effect */
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
 }
 
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
 ul, ol {
-    color: #EEE8AA;  /* Light natural tone */
+    color: #EEE8AA;
     list-style-type: none; 
     padding: 0;
+    margin-bottom: 20px;  /* Add space below lists */
 }
+
+li {
+    margin-bottom: 10px;  /* Add space between list items */
+}
+
+/* ========================================
+   CODE
+   ======================================== */
 
 code {
     color: #FFF;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* ========================================
+   SCROLLING LIST
+   ======================================== */
+
 .scrolling-list {
     max-height: 400px;
     overflow-y: scroll;
     border-radius: 10px;
-    border: 1px solid #EEE8AA;  /* Light natural tone border */
+    border: 1px solid #EEE8AA;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1);  /* Light white color, lower opacity for transparency */
-    color: #EEE8AA;  /* Light natural tone */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #EEE8AA;
+    margin-bottom: 20px;  /* Add space below scrolling list */
 }
 
+/* ========================================
+   COMPACT LIST
+   ======================================== */
+
 .compact-list {
-    padding-left: 20px; /* Increase or decrease as needed */
-    list-style-type: none; /* Removes bullet points */
-    line-height: 1.5; /* Adjusts space between lines */
+    padding-left: 20px;
+    list-style-type: none;
+    line-height: 1.5;
+    margin-bottom: 20px;  /* Add space below compact list */
 }
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
 
 .scrolling-list::-webkit-scrollbar {
     width: 8px;
 }
 
 .scrolling-list::-webkit-scrollbar-thumb {
-    background: #EEE8AA;  /* Light natural tone scrollbar */
+    background: #EEE8AA;
 }
 
 .scrolling-list::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);  /* Light white color, lower opacity for transparency */
+    background: rgba(255, 255, 255, 0.1);
 }
