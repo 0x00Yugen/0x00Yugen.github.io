@@ -1,0 +1,63 @@
+body {
+    background: url('498921.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 60%;
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #FFAA00;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgba(255, 170, 0, 0.7);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.button:hover {
+    background-color: rgba(232, 159, 0, 0.7);
+}
+
+ul, ol {
+    color: #FFF;
+    list-style-type: none; 
+    padding: 0;
+}
+
+code {
+    color: #FFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
