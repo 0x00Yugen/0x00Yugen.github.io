@@ -35,21 +35,22 @@ footer, header, hgroup, menu, nav, section {
    ======================================== */
 
 body {
-    line-height: 1.6;  /* Increase line-height for better readability */
+    line-height: 1.6;  
     background: url('498921.jpg') no-repeat center center fixed; 
     background-size: cover;
     color: #FFF;
     font-family: Arial, sans-serif;
-    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    display: flex;  /* Keep this to center the container horizontally */
+    justify-content: center;  /* Keep this to center the container horizontally */
+    align-items: flex-start;  /* Change this from center to flex-start to align the container to the top */
+    overflow: auto;  /* Add this to enable scrolling if the content exceeds the viewport height */
 }
 
 .container {
-    width: 60%;
+    max-width: 60%;  /* Change width to max-width for better responsiveness */
+    width: 100%;  /* Ensure the container takes up full width on smaller screens */
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     padding: 20px;
@@ -57,6 +58,7 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    margin: 20px;  /* Add a margin around the container to avoid content being cut off */
 }
 
 header {
