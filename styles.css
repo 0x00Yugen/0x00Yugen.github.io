@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 60%;
-    background: rgba(30, 30, 30, 0.6);
+    background: rgba(255, 255, 255, 0.1);  /* Light white color, lower opacity for transparency */
     backdrop-filter: blur(20px);
     padding: 20px;
     border-radius: 10px;
@@ -27,7 +27,7 @@ header {
 }
 
 h1, h2 {
-    color: #FFAA00;
+    color: #FFFFFF;  /* Light natural tone */
 }
 
 main {
@@ -36,23 +36,24 @@ main {
 
 .button {
     display: inline-block;
-    background-color: rgba(255, 170, 0, 0.7);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);  /* White color with more transparency for a glass effect */
+    color: #FFF;  /* White text */
     text-decoration: none;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 15px 20px;  /* Increase margin for more space */
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;  /* Longer transition for more prominent hover effect */
     border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
 }
 
 .button:hover {
-    background-color: rgba(232, 159, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);  /* Lighter white on hover */
+    transform: scale(1.1);  /* Increase size on hover for more prominent effect */
 }
 
 ul, ol {
-    color: #FFF;
+    color: #EEE8AA;  /* Light natural tone */
     list-style-type: none; 
     padding: 0;
 }
@@ -60,4 +61,32 @@ ul, ol {
 code {
     color: #FFF;
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scrolling-list {
+    max-height: 400px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    border: 1px solid #EEE8AA;  /* Light natural tone border */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);  /* Light white color, lower opacity for transparency */
+    color: #EEE8AA;  /* Light natural tone */
+}
+
+.compact-list {
+    padding-left: 20px; /* Increase or decrease as needed */
+    list-style-type: none; /* Removes bullet points */
+    line-height: 1.5; /* Adjusts space between lines */
+}
+
+.scrolling-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrolling-list::-webkit-scrollbar-thumb {
+    background: #EEE8AA;  /* Light natural tone scrollbar */
+}
+
+.scrolling-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);  /* Light white color, lower opacity for transparency */
 }
